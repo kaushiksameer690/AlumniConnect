@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discussion Forum</title>
+
+    <link rel="stylesheet" href="css/forum.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--  NAVBAR  -->
+
+    <nav class="navbar">
+
+        <h2 class="logo">AlumniConnect</h2>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="mentors.html">Mentors</a></li>
+
+            <li><a href="booking.html">Bookings</a></li>
+
+            <li><a href="forum.html" class="active">Forum</a></li>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!--  HEADER  -->
+
+    <section class="page-header">
+
+        <h1>Community Discussion Forum</h1>
+
+        <p>
+
+            Ask questions, share ideas and learn from fellow students and alumni.
+
+        </p>
+
+    </section>
+
+    <!--  CREATE POST  -->
+
+    <section class="forum-form-section">
+
+        <form id="postForm" class="forum-form">
+
+            <div class="input-box">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Discussion Topic</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter discussion title"
+                    required
+                >
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Your Question</label>
+
+                <textarea
+                    id="question"
+                    rows="6"
+                    placeholder="Type your question here..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+
+                Post Question
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- POSTS  -->
+
+    <section class="posts-section">
+
+        <h2>Recent Discussions</h2>
+
+        <div id="postsContainer" class="posts-container">
+
+            <!-- JavaScript will generate discussion cards here -->
+
+        </div>
+
+    </section>
+
+    <!--  SUCCESS MESSAGE  -->
+
+    <div id="successMessage" class="success-message">
+
+        ✅ Question Posted Successfully!
+
+    </div>
+
+    <!--  FOOTER  -->
+
+    <footer>
+
+        <p>
+
+            © 2026 AlumniConnect | Connect • Learn • Grow
+
+        </p>
+
+    </footer>
+
+    <script src="js/forum.js"></script>
+
+</body>
+
+</html>

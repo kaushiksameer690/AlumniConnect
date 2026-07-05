@@ -1,0 +1,296 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f7fb;
+
+    color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#0f172a;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    color:#38bdf8;
+}
+
+.active{
+
+    color:#38bdf8 !important;
+}
+
+/* HEADER */
+
+.page-header{
+
+    text-align:center;
+
+    padding:60px 20px 30px;
+}
+
+.page-header h1{
+
+    color:#2563eb;
+
+    font-size:2.7rem;
+
+    margin-bottom:12px;
+}
+
+.page-header p{
+
+    color:#666;
+
+    font-size:1.05rem;
+}
+
+/* BOOKING SECTION */
+
+.booking-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px 20px 70px;
+}
+
+/* FORM */
+
+.booking-form{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+}
+
+.input-box label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#333;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+}
+
+textarea{
+
+    resize:vertical;
+}
+
+/* BUTTON */
+
+.submit-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:15px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.submit-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+/* SUCCESS MESSAGE */
+
+.success-message{
+
+    position:fixed;
+
+    right:25px;
+
+    top:95px;
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    display:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+    z-index:2000;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:22px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .booking-form{
+
+        padding:30px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .page-header h1{
+
+        font-size:2rem;
+    }
+
+    .booking-form{
+
+        padding:22px;
+    }
+
+    .input-box input,
+    .input-box select,
+    .input-box textarea{
+
+        font-size:.95rem;
+    }
+
+}
