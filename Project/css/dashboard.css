@@ -47,9 +47,12 @@ body{
 .logo{
 
     font-size:1.8rem;
-
     font-weight:700;
-
+    background: linear-gradient(90deg, #00E676, #00E5FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing:1px;
 }
 
 .nav-links{
