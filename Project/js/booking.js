@@ -10,6 +10,7 @@ const selectedMentor = localStorage.getItem("selectedMentor");
 if (selectedMentor) {
 
     mentorName.value = selectedMentor;
+    localStorage.removeItem("selectedMentor");
 
 }
 
@@ -51,10 +52,7 @@ bookingForm.addEventListener("submit", function (e) {
     // Reset Form
     bookingForm.reset();
 
-    if (selectedMentor) {
-
-        mentorName.value = selectedMentor;
-    }
+    
     // Hide Success Message
     setTimeout(() => {
 
