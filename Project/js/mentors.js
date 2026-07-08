@@ -21,7 +21,7 @@ const mentors = [
     },
 
     {
-        name: "Amit Verma",
+        name: "Aman Verma",
         domain: "Android Development",
         experience: "6 Years",
         bio: "Android Developer specializing in Kotlin and Jetpack Compose.",
@@ -30,7 +30,7 @@ const mentors = [
     },
 
     {
-        name: "Sneha Kapoor",
+        name: "Neha Kapoor",
         domain: "Cyber Security",
         experience: "7 Years",
         bio: "Security Analyst with expertise in ethical hacking.",
@@ -39,7 +39,7 @@ const mentors = [
     },
 
     {
-        name: "Karan Singh",
+        name: "Arjun Singh",
         domain: "Data Science",
         experience: "3 Years",
         bio: "Data Scientist experienced in Python, SQL and Power BI.",
@@ -48,7 +48,7 @@ const mentors = [
     },
 
     {
-        name: "Neha Gupta",
+        name: "Sneha Gupta",
         domain: "Web Development",
         experience: "8 Years",
         bio: "Full Stack Developer mentoring aspiring software engineers.",
